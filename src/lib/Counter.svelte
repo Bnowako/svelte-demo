@@ -1,8 +1,15 @@
 <script>
     let count = 0
+    const onClick = () => {
+        count++
+    }
 </script>
 
-<p>Counter: {count}</p>
-<button on:click={() => count++}>
-    Click
-</button>
+<section>
+    <h1>Counter: {count}</h1>
+</section>
+<section>
+    <button on:click={onClick}>
+        Click
+    </button>
+</section>
